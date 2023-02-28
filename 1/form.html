@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .p {
+        background-color: #340040;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        color: #07F2F2;
+
+        }
+        @font-face {
+            font-family: "PremierLeague";
+            src: url(FontsFree-Net-Barclays-Premier-League.ttf);
+        }
+        h1{font-family:PremierLeague}
+        h2{font-family:PremierLeague}
+        td{font-family:PremierLeague}
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+    </style>
+    <body>
+        <div>
+            <p style="background-color: #07F2F2;">
+                <img src="i.png" class="center"/>
+            </p>
+
+        </div>
+       
+        
+        <div  class = "p">
+
+            <h2> Form Prediksi Juara liga Premier League</h2>
+            <form action=”” method=”POST”>
+            <table border="0" width="90">
+            <tr>
+            <td>Nama Lengkap</td>
+            <td>:</td>
+            <td width="700">
+            <input type="text"name="nama_input" class="text-field" id="nama_id" placeholder="" value="" /></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+
+                <td>:</td>
+                <td><input type="email" name="email_input"
+                class="text-field" id="email_id" placeholder=""/></td>
+                </tr>
+                <tr>
+                <td>Jenis Kelamin</td>
+
+                <td>:</td>
+                <td>
+                <input type="radio" name="jk_input"
+                class="radioB" id="radioB" value="Pria">Pria</input>
+                <input type="radio" name="jk_input"
+                class="radioB" id="radioB" value="Wanita">Wanita</input>
+                </td>
+                </tr>
+                <tr>
+                    <td>Prediksi Juara</td>
+                    <td>:</td>
+                    <td>
+                    <input type="checkbox" name="Prediksi"
+                    class="checkBox" id="checkB_id" value="Arsenal">Arsenal</input><br/>
+                    <input type="checkbox" name="hobi_input"
+                    class="checkBox" id="checkB_id" value="Man City">Man City</input><br/>
+                    <input type="checkbox" name="hobi_input"
+                    class="checkBox" id="checkB_id" value="Man United">Man United</input>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>Klub Favorit</td>
+                        <td>:</td>
+                        <td>
+                        <select name="jp_input" class="dropdown"
+                        id="jp_id">
+                        <option value=""
+                        selected>------Pilih------</option>
+                        <option value="arsenal">Arsenal</option>
+                        <option value="Manunited">Manchester United</option>
+                        <option value="ManCity">Manchester City</option>
+                        <option value="chelsea">Chelsea</option>
+                        <option value="liverpool">Liverpool</option>
+                        <option value="tootenham">Tottenham</option>
+                        <option value="newcastle">Newcastle</option>
+
+                        </select>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>Alasan Pilihan Prediksi</td>
+                        <td>:</td>
+                        <td>
+                        <textarea rows="5" cols="40%"></textarea>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td colspan="3" align="right">
+                        <button type="Button" name="btnCnc"
+                        class="btnCancel" id="id_btncnc">Cancel</button>
+                        <input type="Submit" name="btnSub"
+                        class="btnSubmit" id="id_btnsub" value="Submit"/>
+                        </td>
+                        </tr>
+                        </table>
+                        </form>
+        </div>       
+    </body>
+</html>
